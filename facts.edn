@@ -1,0 +1,26 @@
+;; facts.edn — GLEIF LEI レコードから取り込んだ法人レベルの事実。
+;; 生成物: scripts/lei-gleif-ingest.cljs（手編集しない）。
+;; 出典 https://api.gleif.org/api/v1/lei-records/06BTX5UWZD0GQ5N5Y745 を 2026-08-25 に GET（HTTP 200）。応答本文の sha256 を同梱。
+;; fact/conflict は blueprint.edn の既存値と食い違った key。どちらも消していない。
+[["gleif-06btx5uwzd0gq5n5y745" "company/lei" "06BTX5UWZD0GQ5N5Y745" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "fact/source-url" "https://api.gleif.org/api/v1/lei-records/06BTX5UWZD0GQ5N5Y745" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "fact/retrieved-at" "2026-08-25" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "fact/response-sha256" "ba966809986e833a5e937349573a338eaffadd224fb4d872f6d698bd76447a05" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "source/dataset" "cloud-itonami-lei-gleif" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/legal-name" "WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORPORATION" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/legal-address" "C/O CORPORATION SERVICE COMPANY, 251 LITTLE FALLS DRIVE, 19808, WILMINGTON, US-DE, US" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/headquarters-address" "C/O CORPORATION SERVICE COMPANY, 251 LITTLE FALLS DRIVE, 19808, WILMINGTON, US-DE, US" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/registered-as" "2211085" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/registration-authority" "RA000602" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/jurisdiction" "US-DE" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/category" "GENERAL" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/legal-form-elf" "XTIQ" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/entity-status" "ACTIVE" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/entity-creation-date" "1989-10-19T00:00:00Z" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/registration-status" "ISSUED" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/initial-registration-date" "2012-06-06T15:52:00Z" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/last-update-date" "2026-08-18T17:02:51Z" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/next-renewal-date" "2027-09-25T00:00:00Z" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/managing-lou" "213800WAVVOPS85N2205" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "gleif/corroboration-level" "FULLY_CORROBORATED" 1 :add]
+ ["gleif-06btx5uwzd0gq5n5y745" "fact/conflict" ":company/postal-address: blueprint=\"30 Isabella Street, Pittsburgh, PA, 15212, USA\" gleif=\"C/O CORPORATION SERVICE COMPANY, 251 LITTLE FALLS DRIVE, 19808, WILMINGTON, US-DE, US\"" 1 :add]]
